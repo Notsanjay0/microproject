@@ -5,10 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-    min-height: 100vh;
+    min-height: 85vh;
     width: 100%;
     background: linear-gradient(135deg, rgb(79, 6, 167), rgb(208, 201, 5));
     padding: 10px;
+}
+header {
+    min-height: 15vh;
+    width: 100%;
+    background-color: #f9d313 ;
 }
 .todo-app {
     width: 100%;
