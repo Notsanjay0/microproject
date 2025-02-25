@@ -1,8 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const taskContainer = document.getElementById("task-container");
 
-taskContainer.innerHTML = localStorage.getItem("data");
-
 function addTask() {
     if(inputBox.value === ''){
         alert("You must type SOMETHING");
@@ -33,5 +31,14 @@ function saveTasks() {
     localStorage.setItem("data", taskContainer.innerHTML);
 }
 
+function saveInput() {
+    sessionStorage.setItem("inputData", inputBox.value);
+}
+
 taskContainer.innerHTML = localStorage.getItem("data");
 
+if (inputData) {
+    inputBox.value = sessionStorage.getItem("inputData");
+}
+
+//fix the input box - "data not saving" issue

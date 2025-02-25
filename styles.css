@@ -7,7 +7,7 @@
 .container {
     min-height: 85vh;
     width: 100%;
-    background: linear-gradient(135deg, rgb(79, 6, 167), rgb(208, 201, 5));
+    background: linear-gradient(135deg, #cd7672, #eeb462);
     padding: 10px;
 }
 header {
@@ -110,4 +110,40 @@ header {
 }
 #task-container li span:hover {
     background-color: #999;
+}
+.navbar {
+    width: 100%;
+    background-color: tomato;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.navdiv {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: yellow;*/
+}
+.navdiv li {
+    display: inline-block;
+}
+.navdiv a button {
+    text-decoration: none;
+}
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.navdiv button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: solid 1px #fffbfb;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-right: 2rem;
+}
+.navdiv button:hover {
+    background-color: rgb(180, 67, 47);
 }
